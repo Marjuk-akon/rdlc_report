@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SaddamDBModel1" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="SaddamDBEntities1" p1:LazyLoadingEnabled="true">
+    <FunctionImport Name="rptReport3" ReturnType="Collection(SaddamDBModel1.rptReport3_Result)">
+      <Parameter Name="FromDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ToDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="rptReport3_Result">
+    <Property Type="Int32" Name="BatchNo" Nullable="true" />
+    <Property Type="Int32" Name="RECIPE_CODE" Nullable="true" />
+    <Property Type="String" Name="RECIPE_NAME" Nullable="true" MaxLength="50" />
+    <Property Type="Decimal" Name="SETWEIGHT" Nullable="true" Precision="38" Scale="1" />
+    <Property Type="Decimal" Name="ACTUALWEIGHT" Nullable="true" Precision="38" Scale="1" />
+    <Property Type="Decimal" Name="DIFFERANCE" Nullable="true" Precision="38" Scale="1" />
+    <Property Type="DateTime" Name="EndDATETIME" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="START_DATETIME" Nullable="true" Precision="23" />
+  </ComplexType>
+</Schema>

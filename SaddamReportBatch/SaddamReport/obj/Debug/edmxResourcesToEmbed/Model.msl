@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SaddamDBModelStoreContainer" CdmEntityContainer="SaddamDBEntities">
+    <FunctionImportMapping FunctionImportName="rptReport" FunctionName="SaddamDBModel.Store.rptReport">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SaddamDBModel.rptReport_Result">
+          <ScalarProperty Name="RECIPE_CODE" ColumnName="RECIPE_CODE" />
+          <ScalarProperty Name="RECIPE_NAME" ColumnName="RECIPE_NAME" />
+          <ScalarProperty Name="BatchNo" ColumnName="BatchNo" />
+          <ScalarProperty Name="SETWEIGHT" ColumnName="SETWEIGHT" />
+          <ScalarProperty Name="ACTUALWEIGHT" ColumnName="ACTUALWEIGHT" />
+          <ScalarProperty Name="DIFFERANCE" ColumnName="DIFFERANCE" />
+          <ScalarProperty Name="START_DATETIME" ColumnName="START_DATETIME" />
+          <ScalarProperty Name="EndDATETIME" ColumnName="EndDATETIME" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
